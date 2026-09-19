@@ -1,0 +1,20 @@
+.vazio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--esp-2);
+  padding: var(--esp-7) var(--esp-4);
+  text-align: center;
+  border: 1px dashed var(--cor-pauta-forte);
+  border-radius: var(--raio);
+}
+
+.titulo {
+  font-size: var(--texto-md);
+}
+
+.descricao {
+  color: var(--cor-tinta-media);
+  font-size: var(--texto-sm);
+  max-width: 44ch;
+}

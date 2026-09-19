@@ -1,0 +1,49 @@
+.cabecalho {
+  border-bottom: 2px solid var(--cor-tinta);
+  padding-bottom: var(--esp-4);
+  margin-bottom: var(--esp-5);
+}
+
+.identificacao {
+  margin-bottom: var(--esp-4);
+}
+
+.nome {
+  font-size: var(--texto-lg);
+}
+
+.endereco {
+  font-size: var(--texto-xs);
+  color: var(--cor-tinta-media);
+}
+
+.tituloDocumento {
+  font-size: var(--texto-base);
+  font-weight: 500;
+  color: var(--cor-caneta);
+  margin-bottom: var(--esp-4);
+}
+
+.dados {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: var(--esp-3);
+  margin: 0;
+}
+
+.dados dt {
+  font-size: var(--texto-xs);
+  color: var(--cor-tinta-fraca);
+}
+
+.dados dd {
+  margin: 0;
+  font-size: var(--texto-sm);
+  font-weight: 500;
+}
+
+@media (max-width: 720px) {
+  .dados {
+    grid-template-columns: 1fr 1fr;
+  }
+}

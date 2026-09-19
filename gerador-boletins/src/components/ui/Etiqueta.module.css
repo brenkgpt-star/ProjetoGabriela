@@ -1,0 +1,28 @@
+.etiqueta {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: var(--texto-xs);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.neutro {
+  background-color: var(--cor-pauta);
+  color: var(--cor-tinta-media);
+}
+
+.aprovado {
+  background-color: var(--cor-aprovado-lavada);
+  color: var(--cor-aprovado);
+}
+
+.recuperacao {
+  background-color: var(--cor-recuperacao-lavada);
+  color: var(--cor-recuperacao);
+}
+
+.reprovado {
+  background-color: var(--cor-reprovado-lavada);
+  color: var(--cor-reprovado);
+}

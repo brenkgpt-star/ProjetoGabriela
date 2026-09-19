@@ -1,0 +1,22 @@
+.cartao {
+  background-color: var(--cor-papel);
+  border: var(--borda);
+  border-radius: var(--raio);
+}
+
+.cabecalho {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--esp-3);
+  padding: var(--esp-3) var(--esp-4);
+  border-bottom: var(--borda);
+}
+
+.titulo {
+  font-size: var(--texto-md);
+}
+
+.corpo {
+  padding: var(--esp-4);
+}

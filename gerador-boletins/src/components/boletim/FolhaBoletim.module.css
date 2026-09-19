@@ -1,0 +1,56 @@
+.folha {
+  background-color: #fff;
+  border: var(--borda);
+  box-shadow: var(--sombra-folha);
+  padding: var(--esp-6) var(--esp-6) var(--esp-5);
+  max-width: 820px;
+}
+
+.observacoes {
+  margin-top: var(--esp-5);
+  padding: var(--esp-3) var(--esp-4);
+  background-color: var(--cor-papel);
+  border-left: 3px solid var(--cor-caneta);
+}
+
+.rotuloSecao {
+  font-size: var(--texto-sm);
+  color: var(--cor-tinta-media);
+  margin-bottom: var(--esp-1);
+}
+
+.textoObservacao {
+  font-size: var(--texto-sm);
+}
+
+.assinaturas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--esp-5);
+  margin-top: var(--esp-7);
+}
+
+.linhaAssinatura {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-top: var(--esp-2);
+  border-top: 1px solid var(--cor-tinta);
+  font-size: var(--texto-sm);
+}
+
+.linhaAssinatura small {
+  color: var(--cor-tinta-fraca);
+  font-size: var(--texto-xs);
+}
+
+@media (max-width: 720px) {
+  .folha {
+    padding: var(--esp-4);
+  }
+
+  .assinaturas {
+    grid-template-columns: 1fr;
+    gap: var(--esp-4);
+  }
+}

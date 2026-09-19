@@ -1,7 +1,7 @@
 # Gerador de boletins
 
-Sistema web para a secretaria escolar montar, conferir e imprimir boletins anuais
-por aluno e turma, com notas separadas por trimestre (estilo SIGAA). Projeto em React + Vite, com a estrutura de pastas pronta para crescer.
+Sistema web para a secretaria escolar montar, conferir e imprimir boletins por aluno,
+turma e bimestre. Projeto em React + Vite, com a estrutura de pastas pronta para crescer.
 
 ## Rodando o projeto
 
@@ -69,11 +69,9 @@ os services passam a chamar `api.js` no lugar de importar de `src/data`.
 
 | Rota               | Tela                                    |
 | ------------------ | --------------------------------------- |
-| `/`                | Painel do ano letivo                      |
-| `/comecar`           | Primeiros passos: escola, turmas e alunos |
+| `/`                | Painel do bimestre                      |
 | `/boletins`        | Lista de boletins gerados               |
 | `/boletins/novo`   | Formulario de lancamento de notas       |
-| `/boletins/ler`    | Leitura de boletim por foto (sem chave)   |
 | `/boletins/:id`    | Boletim pronto, com botao de impressao  |
 | `/alunos`          | Cadastro de alunos                      |
 | `/turmas`          | Turmas e grade de disciplinas           |
@@ -81,12 +79,10 @@ os services passam a chamar `api.js` no lugar de importar de `src/data`.
 
 ## Estado atual
 
-Escola, turmas, alunos, disciplinas e boletins criados no navegador ficam salvos
-em `localStorage`. A leitura de boletim por foto funciona sem chave (servico
-gratuito); com `VITE_GEMINI_API_KEY` no arquivo `.env` ha uma reserva automatica.
-O que falta para virar produto:
+As telas estao montadas com dados de exemplo em `src/data`. Salvar, editar e emitir
+ainda nao persistem nada. O que falta para virar produto:
 
 - backend e autenticacao da secretaria
 - gravacao das notas lancadas em `/boletins/novo`
 - exportacao em PDF alem do `window.print()`
-- historico anual com as medias dos tres trimestres
+- historico anual com as medias dos quatro bimestres

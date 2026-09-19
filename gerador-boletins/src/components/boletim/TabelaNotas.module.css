@@ -1,0 +1,256 @@
+.envoltorio {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--texto-sm);
+  line-height: 1.4;
+}
+
+.tabela th {
+  padding: 10px 12px;
+  font-weight: 600;
+  font-size: var(--texto-xs);
+  color: var(--cor-tinta-media);
+  border-bottom: 2px solid var(--cor-tinta);
+  white-space: nowrap;
+}
+
+.tabela td {
+  padding: 10px 12px;
+  border-bottom: var(--borda);
+  vertical-align: middle;
+}
+
+.tabela tbody tr:nth-child(even) td {
+  background-color: #f8fafc;
+}
+
+.tabela tbody tr:hover td {
+  background-color: #f1f5f9;
+}
+
+.colDisciplina {
+  text-align: left;
+  min-width: 160px;
+}
+
+.nomeDisciplina {
+  font-weight: 600;
+  color: var(--cor-tinta);
+}
+
+.professorSubtitulo {
+  display: block;
+  font-size: 11px;
+  color: var(--cor-tinta-fraca);
+  margin-top: 2px;
+}
+
+.colTri {
+  text-align: center;
+  width: 68px;
+  font-variant-numeric: tabular-nums;
+  font-weight: 500;
+}
+
+.colRec {
+  background-color: #fffbeb;
+}
+
+.tabela thead .colRec {
+  color: #92400e;
+}
+
+.notaVazia {
+  color: var(--cor-tinta-fraca);
+}
+
+/* Nota do trimestre superada pela recuperacao paralela: sai riscada */
+.notaSubstituida {
+  text-decoration: line-through;
+  color: var(--cor-tinta-fraca);
+}
+
+/* Recuperacao que substituiu de fato a nota do trimestre */
+.notaRecuperada {
+  font-weight: 700;
+  color: #047857;
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
+  border-radius: 6px;
+  padding: 1px 6px;
+}
+
+.legendaRec {
+  margin: 8px 2px 0;
+  font-size: 11px;
+  color: var(--cor-tinta-fraca);
+}
+
+.colMedia {
+  text-align: center;
+  width: 72px;
+  font-variant-numeric: tabular-nums;
+  font-size: 13.5px;
+}
+
+.colMeta {
+  text-align: center;
+  min-width: 130px;
+}
+
+.colFaltas {
+  text-align: center;
+  min-width: 130px;
+}
+
+.colSituacao {
+  text-align: center;
+  width: 110px;
+}
+
+/* Badges da Meta do 3º Trimestre */
+.tagMeta {
+  display: inline-block;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
+}
+
+.meta_garantido,
+.meta_concluido-aprovado {
+  background: #ecfdf5;
+  color: #047857;
+  border: 1px solid #a7f3d0;
+}
+
+.meta_precisa {
+  background: #eff6ff;
+  color: #1d4ed8;
+  border: 1px solid #bfdbfe;
+}
+
+.meta_dificil,
+.meta_concluido-recuperacao {
+  background: #fff7ed;
+  color: #c2410c;
+  border: 1px solid #fed7aa;
+}
+
+.meta_em-curso {
+  background: #f5f3ff;
+  color: #6d28d9;
+  border: 1px solid #ddd6fe;
+}
+
+.meta_aguardando {
+  background: #f3f4f6;
+  color: #6b7280;
+  border: 1px solid #e5e7eb;
+}
+
+/* Célula e badges de faltas */
+.celulaFaltas {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+
+.numFaltas {
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  font-size: var(--texto-sm);
+  color: var(--cor-tinta);
+}
+
+.tagFaltas {
+  display: inline-block;
+  padding: 2px 7px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.faltas_seguro {
+  background: #ecfdf5;
+  color: #065f46;
+  border: 1px solid #a7f3d0;
+}
+
+.faltas_atencao {
+  background: #fef3c7;
+  color: #92400e;
+  border: 1px solid #fde68a;
+}
+
+.faltas_excedido {
+  background: #fee2e2;
+  color: #b91c1c;
+  border: 1px solid #fecaca;
+}
+
+/* Badges da Situação Geral */
+.tagSituacao {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 9999px;
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+.sit_aprovado {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.sit_recuperacao {
+  background: #fef9c3;
+  color: #a16207;
+}
+
+.sit_reprovado {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.aprovado {
+  color: var(--cor-aprovado);
+}
+
+.recuperacao {
+  color: var(--cor-recuperacao);
+}
+
+.reprovado {
+  color: var(--cor-reprovado);
+}
+
+@media print {
+  .tabela th {
+    border-bottom: 1px solid #000;
+    color: #000;
+  }
+  .tabela tbody tr:nth-child(even) td {
+    background-color: transparent;
+  }
+  .tagMeta,
+  .tagFaltas,
+  .tagSituacao {
+    border: 1px solid #ccc !important;
+    background: transparent !important;
+    color: #000 !important;
+  }
+}

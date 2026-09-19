@@ -1,0 +1,33 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-1);
+}
+
+.etiqueta {
+  font-size: var(--texto-sm);
+  font-weight: 500;
+  color: var(--cor-tinta-media);
+}
+
+.controle {
+  width: 100%;
+  padding: 8px 10px;
+  background-color: #fff;
+  border: 1px solid var(--cor-pauta-forte);
+  border-radius: var(--raio);
+}
+
+.controle:hover {
+  border-color: var(--cor-tinta-fraca);
+}
+
+.area {
+  resize: vertical;
+  min-height: 92px;
+}
+
+.dica {
+  font-size: var(--texto-xs);
+  color: var(--cor-tinta-fraca);
+}

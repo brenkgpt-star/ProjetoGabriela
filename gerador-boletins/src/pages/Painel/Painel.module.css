@@ -1,0 +1,33 @@
+.indicadores {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--esp-3);
+  margin-bottom: var(--esp-5);
+}
+
+.indicador {
+  display: flex;
+  flex-direction: column;
+  gap: var(--esp-1);
+  padding: var(--esp-4);
+  background-color: var(--cor-papel);
+  border: var(--borda);
+  border-radius: var(--raio);
+}
+
+.rotulo {
+  font-size: var(--texto-xs);
+  color: var(--cor-tinta-media);
+}
+
+.numero {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-xl);
+  line-height: 1;
+}
+
+@media (max-width: 720px) {
+  .indicadores {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

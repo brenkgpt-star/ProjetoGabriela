@@ -1,0 +1,23 @@
+/* Regras usadas quando o boletim vai para a impressora ou para PDF. */
+@media print {
+  @page {
+    size: A4 portrait;
+    margin: 12mm;
+  }
+
+  body {
+    background: #fff;
+  }
+
+  .nao-imprimir {
+    display: none !important;
+  }
+
+  .folha-impressao {
+    box-shadow: none !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+  }
+}

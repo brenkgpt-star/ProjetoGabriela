@@ -1,0 +1,55 @@
+/* Paleta e escalas do sistema. Alterar aqui muda o tema inteiro. */
+:root {
+  /* Cores base */
+  --cor-tinta: #16202b;
+  --cor-tinta-media: #4a5a6a;
+  --cor-tinta-fraca: #7d8b98;
+  --cor-papel: #fbfbf9;
+  --cor-papel-fundo: #f0f2f0;
+  --cor-pauta: #dde1e4;
+  --cor-pauta-forte: #c3cad1;
+
+  /* Cor de acao: azul de caneta esferografica */
+  --cor-caneta: #2b4c8c;
+  --cor-caneta-escura: #1e3868;
+  --cor-caneta-lavada: #e8edf7;
+
+  /* Situacao do aluno */
+  --cor-aprovado: #1f7a5a;
+  --cor-aprovado-lavada: #e4f1ec;
+  --cor-recuperacao: #b5810a;
+  --cor-recuperacao-lavada: #fbf1dc;
+  --cor-reprovado: #a83226;
+  --cor-reprovado-lavada: #f8e8e6;
+
+  /* Tipografia */
+  --fonte-titulo: 'Bitter', Georgia, serif;
+  --fonte-texto: 'IBM Plex Sans', system-ui, -apple-system, sans-serif;
+
+  --texto-xs: 0.75rem;
+  --texto-sm: 0.8125rem;
+  --texto-base: 0.9375rem;
+  --texto-md: 1.0625rem;
+  --texto-lg: 1.375rem;
+  --texto-xl: 1.75rem;
+  --texto-2xl: 2.25rem;
+
+  /* Espacamento */
+  --esp-1: 4px;
+  --esp-2: 8px;
+  --esp-3: 12px;
+  --esp-4: 16px;
+  --esp-5: 24px;
+  --esp-6: 32px;
+  --esp-7: 48px;
+
+  /* Formas */
+  --raio: 3px;
+  --borda: 1px solid var(--cor-pauta);
+  --sombra-folha: 0 1px 2px rgba(22, 32, 43, 0.08), 0 12px 28px rgba(22, 32, 43, 0.08);
+
+  /* Layout */
+  --largura-menu: 232px;
+  --altura-topo: 64px;
+  --largura-conteudo: 1120px;
+}

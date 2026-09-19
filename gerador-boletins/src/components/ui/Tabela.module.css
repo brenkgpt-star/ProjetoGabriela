@@ -1,0 +1,34 @@
+.rolagem {
+  overflow-x: auto;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--texto-sm);
+}
+
+.tabela th {
+  padding: var(--esp-2) var(--esp-3);
+  font-weight: 600;
+  color: var(--cor-tinta-media);
+  border-bottom: 1px solid var(--cor-pauta-forte);
+  white-space: nowrap;
+}
+
+.tabela td {
+  padding: 10px var(--esp-3);
+  border-bottom: var(--borda);
+}
+
+.tabela tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.clicavel {
+  cursor: pointer;
+}
+
+.clicavel:hover td {
+  background-color: var(--cor-caneta-lavada);
+}

@@ -1,0 +1,91 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  width: var(--largura-menu);
+  flex-shrink: 0;
+  background-color: var(--cor-tinta);
+  color: #e7ecf1;
+  padding: var(--esp-5) var(--esp-4);
+}
+
+.marca {
+  margin-bottom: var(--esp-6);
+}
+
+.selo {
+  display: inline-block;
+  padding: 1px 7px;
+  margin-bottom: var(--esp-2);
+  border: 1px solid rgba(231, 236, 241, 0.35);
+  border-radius: 2px;
+  font-size: var(--texto-xs);
+  color: #b8c5d2;
+}
+
+.nomeEscola {
+  font-family: var(--fonte-titulo);
+  font-size: var(--texto-md);
+  line-height: 1.25;
+  color: #fff;
+}
+
+.navegacao {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+}
+
+.item {
+  padding: 7px var(--esp-3);
+  border-radius: var(--raio);
+  color: #b8c5d2;
+  font-size: var(--texto-sm);
+}
+
+.item:hover {
+  background-color: rgba(255, 255, 255, 0.07);
+  color: #fff;
+  text-decoration: none;
+}
+
+.ativo {
+  background-color: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  box-shadow: inset 2px 0 0 var(--cor-papel);
+}
+
+.rodape {
+  padding-top: var(--esp-4);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.assinatura {
+  font-size: var(--texto-xs);
+  color: #8a9aa9;
+}
+
+.usuario {
+  font-size: var(--texto-sm);
+  color: #fff;
+}
+
+@media (max-width: 860px) {
+  .menu {
+    width: 100%;
+    padding: var(--esp-4);
+  }
+
+  .marca {
+    margin-bottom: var(--esp-4);
+  }
+
+  .navegacao {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .rodape {
+    display: none;
+  }
+}
