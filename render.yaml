@@ -1,0 +1,13 @@
+# Render Blueprint: publica o app Vite (gera dist/) como site estatico,
+# com rewrite de SPA para o BrowserRouter (/boletins, /alunos, ...).
+services:
+  - type: web
+    name: gerador-boletins
+    env: static
+    rootDir: gerador-boletins
+    buildCommand: npm run build
+    staticPublishPath: ./dist
+    routes:
+      - type: rewrite
+        source: /*
+        destination: /index.html
