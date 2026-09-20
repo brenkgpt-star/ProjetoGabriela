@@ -13,6 +13,15 @@
     display: none !important;
   }
 
+  /* Prova e gabarito nunca saem juntos: o botao de impressao escolhe o bloco. */
+  body.imp-somente-prova .bloco-gabarito {
+    display: none !important;
+  }
+
+  body.imp-somente-gabarito .bloco-prova {
+    display: none !important;
+  }
+
   .folha-impressao {
     box-shadow: none !important;
     border: none !important;

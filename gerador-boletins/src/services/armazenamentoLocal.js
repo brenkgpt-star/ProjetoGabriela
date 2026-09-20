@@ -4,6 +4,7 @@ const CHAVE_TURMAS = 'gb_turmas'
 const CHAVE_ALUNOS = 'gb_alunos'
 const CHAVE_DISCIPLINAS = 'gb_disciplinas'
 const CHAVE_CONFIGURADO = 'gb_configurado'
+const CHAVE_PROVAS = 'gb_provas'
 
 function ler(chave, padrao) {
   try {
@@ -35,4 +36,6 @@ export const armazenamentoLocal = {
   salvarDisciplinas: (disciplinas) => gravar(CHAVE_DISCIPLINAS, disciplinas),
   jaConfigurado: () => ler(CHAVE_CONFIGURADO, false),
   marcarConfigurado: () => gravar(CHAVE_CONFIGURADO, true),
+  listarProvas: () => ler(CHAVE_PROVAS, []),
+  salvarProvas: (provas) => gravar(CHAVE_PROVAS, provas),
 }

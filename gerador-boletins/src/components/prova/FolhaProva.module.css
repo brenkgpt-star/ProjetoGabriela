@@ -1,0 +1,138 @@
+.folha {
+  background: #fff;
+  border: var(--borda);
+  border-radius: 12px;
+  padding: 28px 32px;
+  box-shadow: var(--sombra-folha);
+  margin-bottom: var(--esp-4);
+}
+
+.cabecalho {
+  text-align: center;
+  border-bottom: 2px solid var(--cor-tinta);
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.escola {
+  margin: 0;
+  font-size: var(--texto-sm);
+  color: var(--cor-tinta-media);
+}
+
+.titulo {
+  margin: 4px 0 8px;
+  font-size: var(--texto-lg);
+  color: var(--cor-tinta);
+}
+
+.linhaInfo {
+  margin: 6px 0;
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: var(--texto-sm);
+}
+
+.preencher {
+  flex: 1;
+  min-width: 220px;
+  text-align: left;
+}
+
+.preencherCurto {
+  min-width: 140px;
+  text-align: left;
+}
+
+.traco {
+  display: inline-block;
+  width: 70%;
+  border-bottom: 1px solid var(--cor-tinta);
+}
+
+.instrucoes {
+  font-size: var(--texto-sm);
+  font-style: italic;
+  color: var(--cor-tinta-media);
+  margin: 0 0 8px;
+}
+
+.conteudos {
+  font-size: var(--texto-xs);
+  color: var(--cor-tinta-media);
+  margin: 0 0 12px;
+}
+
+.questoes {
+  margin: 0;
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.questao {
+  font-size: var(--texto-sm);
+  line-height: 1.5;
+}
+
+.enunciado {
+  margin: 0 0 4px;
+}
+
+.valor {
+  color: var(--cor-tinta-fraca);
+}
+
+.alternativas {
+  margin: 0;
+  padding-left: 18px;
+  list-style: none;
+}
+
+.alternativas li {
+  margin: 2px 0;
+}
+
+.marcador {
+  font-weight: 600;
+}
+
+.gabarito {
+  border-style: dashed;
+}
+
+.tituloGabarito {
+  margin: 0 0 4px;
+  font-size: var(--texto-lg);
+  color: var(--cor-tinta);
+}
+
+.subGabarito {
+  margin: 0 0 12px;
+  font-size: var(--texto-sm);
+  color: var(--cor-tinta-media);
+}
+
+.listaGabarito {
+  margin: 0;
+  padding-left: 20px;
+  columns: 2;
+  font-size: var(--texto-sm);
+  line-height: 1.8;
+}
+
+@media print {
+  .folha {
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  .listaGabarito {
+    columns: 3;
+  }
+}

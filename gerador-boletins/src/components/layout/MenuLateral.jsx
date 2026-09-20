@@ -4,11 +4,13 @@ import { useBoletimContext } from '@hooks/useBoletimContext'
 import estilos from './MenuLateral.module.css'
 
 const itens = [
-  { para: CAMINHOS.painel, rotulo: 'Painel', fim: true },
+  { para: CAMINHOS.inicio, rotulo: 'Inicio', fim: true },
+  { para: CAMINHOS.painel, rotulo: 'Painel' },
   { para: CAMINHOS.boletins, rotulo: 'Boletins' },
   { para: CAMINHOS.lerBoletim, rotulo: 'Ler boletim' },
   { para: CAMINHOS.alunos, rotulo: 'Alunos' },
   { para: CAMINHOS.turmas, rotulo: 'Turmas' },
+  { para: CAMINHOS.provas, rotulo: 'Provas' },
   { para: CAMINHOS.configuracoes, rotulo: 'Configuracoes' },
 ]
 

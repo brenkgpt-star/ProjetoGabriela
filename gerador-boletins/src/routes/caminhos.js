@@ -1,6 +1,7 @@
 // Um lugar unico para as URLs, para nao repetir string solta pelo projeto.
 export const CAMINHOS = {
-  painel: '/',
+  inicio: '/',
+  painel: '/painel',
   comecar: '/comecar',
   alunos: '/alunos',
   turmas: '/turmas',
@@ -9,4 +10,7 @@ export const CAMINHOS = {
   lerBoletim: '/boletins/ler',
   boletim: (id = ':id') => `/boletins/${id}`,
   configuracoes: '/configuracoes',
+  provas: '/provas',
+  novaProva: '/provas/nova',
+  prova: (id = ':id') => `/provas/${id}`,
 }
